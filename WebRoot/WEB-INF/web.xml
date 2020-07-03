@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+<!-- 配置UserLogin_servlet -->
+  <servlet>
+  	<servlet-name>UserLogin_servlet</servlet-name>
+  	<servlet-class>User.UserLogin_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserLogin_servlet</servlet-name>
+  	<url-pattern>/UserLogin_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置UserReg_servlet -->
+  <servlet>
+  	<servlet-name>UserReg_servlet</servlet-name>
+  	<servlet-class>User.UserReg_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserReg_servlet</servlet-name>
+  	<url-pattern>/UserReg_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置UserUpdate_servlet -->
+  <servlet>
+  	<servlet-name>UserUpdate_servlet</servlet-name>
+  	<servlet-class>User.UserUpdate_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserUpdate_servlet</servlet-name>
+  	<url-pattern>/UserUpdate_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置UserUpdate1_servlet -->
+  <servlet>
+  	<servlet-name>UserUpdate1_servlet</servlet-name>
+  	<servlet-class>User.UserUpdate1_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserUpdate1_servlet</servlet-name>
+  	<url-pattern>/UserUpdate1_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置AUserUpdate_servlet -->
+  <servlet>
+  	<servlet-name>AUserUpdate_servlet</servlet-name>
+  	<servlet-class>User.AUserUpdate_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AUserUpdate_servlet</servlet-name>
+  	<url-pattern>/AUserUpdate_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置userSelect_servlet -->
+	<servlet>
+		<servlet-name>userSelect_servlet</servlet-name>
+  		<servlet-class>User.userSelect_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>userSelect_servlet</servlet-name>
+  		<url-pattern>/userSelect_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置UserDel_servlet -->
+	<servlet>
+		<servlet-name>UserDel_servlet</servlet-name>
+  		<servlet-class>User.UserDel_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>UserDel_servlet</servlet-name>
+  		<url-pattern>/UserDel_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AUserReg_servlet -->
+  <servlet>
+  	<servlet-name>AUserReg_servlet</servlet-name>
+  	<servlet-class>User.AUserReg_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AUserReg_servlet</servlet-name>
+  	<url-pattern>/AUserReg_servlet</url-pattern>
+  </servlet-mapping>
+
+
+
+<!-- 配置StuLogin_servlet -->
+	<servlet>
+		<servlet-name>StuLogin_servlet</servlet-name>
+  		<servlet-class>Stu.StuLogin_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>StuLogin_servlet</servlet-name>
+  		<url-pattern>/StuLogin_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置StuUpdate_servlet -->
+  <servlet>
+  	<servlet-name>StuUpdate_servlet</servlet-name>
+  	<servlet-class>Stu.StuUpdate_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StuUpdate_servlet</servlet-name>
+  	<url-pattern>/StuUpdate_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置StuUpdate1_servlet -->
+  <servlet>
+  	<servlet-name>StuUpdate1_servlet</servlet-name>
+  	<servlet-class>Stu.StuUpdate1_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StuUpdate1_servlet</servlet-name>
+  	<url-pattern>/StuUpdate1_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置AStuUpdate_servlet -->
+  <servlet>
+  	<servlet-name>AStuUpdate_servlet</servlet-name>
+  	<servlet-class>Stu.AStuUpdate_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AStuUpdate_servlet</servlet-name>
+  	<url-pattern>/AStuUpdate_servlet</url-pattern>
+  </servlet-mapping>
+
+  	
+<!-- 配置StuReg_servlet -->
+	<servlet>
+		<servlet-name>StuReg_servlet</servlet-name>
+  		<servlet-class>Stu.StuReg_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>StuReg_servlet</servlet-name>
+  		<url-pattern>/StuReg_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置StuDel_servlet -->
+	<servlet>
+		<servlet-name>StuDel_servlet</servlet-name>
+  		<servlet-class>Stu.StuDel_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>StuDel_servlet</servlet-name>
+  		<url-pattern>/StuDel_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置snoSelect_servlet -->
+	<servlet>
+		<servlet-name>snoSelect_servlet</servlet-name>
+  		<servlet-class>Stu.snoSelect_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>snoSelect_servlet</servlet-name>
+  		<url-pattern>/snoSelect_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置moStuSelect1_servlet -->
+	<servlet>
+		<servlet-name>moStuSelect1_servlet</servlet-name>
+  		<servlet-class>Stu.moStuSelect1_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>moStuSelect1_servlet</servlet-name>
+  		<url-pattern>/moStuSelect1_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置moStuSelect2_servlet -->
+	<servlet>
+		<servlet-name>moStuSelect2_servlet</servlet-name>
+  		<servlet-class>Stu.moStuSelect2_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>moStuSelect2_servlet</servlet-name>
+  		<url-pattern>/moStuSelect2_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置moStuSelect3_servlet -->
+	<servlet>
+		<servlet-name>moStuSelect3_servlet</servlet-name>
+  		<servlet-class>Stu.moStuSelect3_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>moStuSelect3_servlet</servlet-name>
+  		<url-pattern>/moStuSelect3_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoStuSelect1_servlet -->
+	<servlet>
+		<servlet-name>AmoStuSelect1_servlet</servlet-name>
+  		<servlet-class>Stu.AmoStuSelect1_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoStuSelect1_servlet</servlet-name>
+  		<url-pattern>/AmoStuSelect1_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoStuSelect2_servlet -->
+	<servlet>
+		<servlet-name>AmoStuSelect2_servlet</servlet-name>
+  		<servlet-class>Stu.AmoStuSelect2_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoStuSelect2_servlet</servlet-name>
+  		<url-pattern>/AmoStuSelect2_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoStuSelect3_servlet -->
+	<servlet>
+		<servlet-name>AmoStuSelect3_servlet</servlet-name>
+  		<servlet-class>Stu.AmoStuSelect3_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoStuSelect3_servlet</servlet-name>
+  		<url-pattern>/AmoStuSelect3_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoStuSelect4_servlet -->
+	<servlet>
+		<servlet-name>AmoStuSelect4_servlet</servlet-name>
+  		<servlet-class>Stu.AmoStuSelect4_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoStuSelect4_servlet</servlet-name>
+  		<url-pattern>/AmoStuSelect4_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AStuReg_servlet -->
+	<servlet>
+		<servlet-name>AStuReg_servlet</servlet-name>
+  		<servlet-class>Stu.AStuReg_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AStuReg_servlet</servlet-name>
+  		<url-pattern>/AStuReg_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置stuCheck_servlet -->
+	<servlet>
+		<servlet-name>stuCheck_servlet</servlet-name>
+  		<servlet-class>Stu.stuCheck_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>stuCheck_servlet</servlet-name>
+  		<url-pattern>/stuCheck_servlet</url-pattern>
+  	</servlet-mapping>
+
+
+<!-- 配置teaCheck_servlet -->
+	<servlet>
+		<servlet-name>teaCheck_servlet</servlet-name>
+  		<servlet-class>Teacher.teaCheck_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>teaCheck_servlet</servlet-name>
+  		<url-pattern>/teaCheck_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置TeaLogin_servlet -->
+	<servlet>
+		<servlet-name>TeaLogin_servlet</servlet-name>
+  		<servlet-class>Teacher.TeaLogin_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>TeaLogin_servlet</servlet-name>
+  		<url-pattern>/TeaLogin_servlet</url-pattern>
+  	</servlet-mapping>
+  	
+<!-- 配置TeaReg_servlet -->
+	<servlet>
+		<servlet-name>TeaReg_servlet</servlet-name>
+  		<servlet-class>Teacher.TeaReg_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>TeaReg_servlet</servlet-name>
+  		<url-pattern>/TeaReg_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置TeaUpdate_servlet -->
+  <servlet>
+  	<servlet-name>TeaUpdate_servlet</servlet-name>
+  	<servlet-class>Teacher.TeaUpdate_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TeaUpdate_servlet</servlet-name>
+  	<url-pattern>/TeaUpdate_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置ATeaUpdate_servlet -->
+  <servlet>
+  	<servlet-name>ATeaUpdate_servlet</servlet-name>
+  	<servlet-class>Teacher.ATeaUpdate_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ATeaUpdate_servlet</servlet-name>
+  	<url-pattern>/ATeaUpdate_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置ATeaReg_servlet -->
+  <servlet>
+  	<servlet-name>ATeaReg_servlet</servlet-name>
+  	<servlet-class>Teacher.ATeaReg_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ATeaReg_servlet</servlet-name>
+  	<url-pattern>/ATeaReg_servlet</url-pattern>
+  </servlet-mapping>
+
+<!-- 配置TStuReg_servlet -->
+	<servlet>
+		<servlet-name>TStuReg_servlet</servlet-name>
+  		<servlet-class>Stu.TStuReg_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>TStuReg_servlet</servlet-name>
+  		<url-pattern>/TStuReg_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置TeaDel_servlet -->
+	<servlet>
+		<servlet-name>TeaDel_servlet</servlet-name>
+  		<servlet-class>Teacher.TeaDel_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>TeaDel_servlet</servlet-name>
+  		<url-pattern>/TeaDel_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置tnoSelect_servlet -->
+	<servlet>
+		<servlet-name>tnoSelect_servlet</servlet-name>
+  		<servlet-class>Teacher.tnoSelect_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>tnoSelect_servlet</servlet-name>
+  		<url-pattern>/tnoSelect_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoTeaSelect1_servlet -->
+	<servlet>
+		<servlet-name>AmoTeaSelect1_servlet</servlet-name>
+  		<servlet-class>Teacher.AmoTeaSelect1_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoTeaSelect1_servlet</servlet-name>
+  		<url-pattern>/AmoTeaSelect1_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoTeaSelect2_servlet -->
+	<servlet>
+		<servlet-name>AmoTeaSelect2_servlet</servlet-name>
+  		<servlet-class>Teacher.AmoTeaSelect2_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoTeaSelect2_servlet</servlet-name>
+  		<url-pattern>/AmoTeaSelect2_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoTeaSelect3_servlet -->
+	<servlet>
+		<servlet-name>AmoTeaSelect3_servlet</servlet-name>
+  		<servlet-class>Teacher.AmoTeaSelect3_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoTeaSelect3_servlet</servlet-name>
+  		<url-pattern>/AmoTeaSelect3_servlet</url-pattern>
+  	</servlet-mapping>
+
+<!-- 配置AmoTeaSelect4_servlet -->
+	<servlet>
+		<servlet-name>AmoTeaSelect4_servlet</servlet-name>
+  		<servlet-class>Teacher.AmoTeaSelect4_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>AmoTeaSelect4_servlet</servlet-name>
+  		<url-pattern>/AmoTeaSelect4_servlet</url-pattern>
+  	</servlet-mapping>
+
+</web-app>
